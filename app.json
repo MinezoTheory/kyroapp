@@ -1,5 +1,8 @@
 {
   "expo": {
+    "cli": {
+      "appVersionSource": "remote"
+    },
     "name": "Kyro",
     "slug": "kyro-app",
     "version": "1.0.0",
@@ -32,12 +35,6 @@
         {
           "photosPermission": "Allow Kyro to access your photos to share images in chat.",
           "cameraPermission": "Allow Kyro to access your camera."
-        }
-      ],
-      [
-        "expo-speech",
-        {
-          "microphonePermission": "Allow Kyro to use the microphone."
         }
       ]
     ],
