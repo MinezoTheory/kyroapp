@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Kyro",
+    "slug": "kyro-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "kyro",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.kyro.app",
+      "versionCode": 1
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.kyro.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Kyro to access your photos to share images in chat.",
+          "cameraPermission": "Allow Kyro to access your camera."
+        }
+      ],
+      [
+        "expo-speech",
+        {
+          "microphonePermission": "Allow Kyro to use the microphone."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
